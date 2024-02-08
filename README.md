@@ -50,7 +50,7 @@ Die Todo-Liste ermöglicht es Benutzern, ihre Aufgaben zu verwalten. Du kannst n
 - **React**: Eine JavaScript-Bibliothek für den Aufbau von Benutzeroberflächen.
 - **Bootstrap**: Ein Front-End-Framework für das Styling von Webseiten.
 - **Express**: Ein minimalistisches Webframework für Node.js, das für die Erstellung von RESTful APIs verwendet wird.
-- **RESTful APIs: RESTful APIs für die Verwaltung von Aufgaben.
+- **RESTful APIs**: RESTful APIs für die Verwaltung von Aufgaben.
 - **MongoDB**: Eine dokumentenorientierte NoSQL-Datenbank, die für die Speicherung von Aufgaben verwendet wird.
 
 
