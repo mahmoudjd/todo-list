@@ -54,6 +54,3 @@ Die Todo-Liste ermöglicht es Benutzern, ihre Aufgaben zu verwalten. Du kannst n
 - **MongoDB**: Eine dokumentenorientierte NoSQL-Datenbank, die für die Speicherung von Aufgaben verwendet wird.
 
 
-## Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die `LICENSE`-Datei für weitere Informationen.
