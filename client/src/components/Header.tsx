@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header className="navbar bg-light shadow d-flex justify-content-center">

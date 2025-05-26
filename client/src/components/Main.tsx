@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import TaskInput from "./TaskInput";
 import TaskList from "./TaskList";
 
@@ -24,7 +24,7 @@ const Main = () => {
       const data = await response.json();
       setTaskList(data);
     } catch (error) {
-      console.error("Error fetching tasks:", error.message);
+      console.error("Error fetching tasks:", error);
     }
   };
 
@@ -42,7 +42,7 @@ const Main = () => {
       }
       fetchTasks();
     } catch (error) {
-      console.error("Error adding task:", error.message);
+      console.error("Error adding task:", error);
     }
   };
 
@@ -56,7 +56,7 @@ const Main = () => {
       }
       fetchTasks();
     } catch (error) {
-      console.error("Error deleting task:", error.message);
+      console.error("Error deleting task:", error);
     }
   };
 
@@ -80,7 +80,7 @@ const Main = () => {
       }
       fetchTasks();
     } catch (error) {
-      console.error("Error toggling task completion:", error.message);
+      console.error("Error toggling task completion:", error);
     }
   };
 
@@ -101,7 +101,7 @@ const Main = () => {
       }
       fetchTasks();
     } catch (error) {
-      console.error("Error editing task:", error.message);
+      console.error("Error editing task:", error);
     }
   };
 
