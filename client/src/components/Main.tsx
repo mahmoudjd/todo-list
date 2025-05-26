@@ -17,7 +17,7 @@ const Main = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:3000/tasks");
+      const response = await fetch(`${import.meta.env.API_HOST}/tasks`);
       if (!response.ok) {
         throw new Error("Failed to fetch tasks");
       }
@@ -30,7 +30,7 @@ const Main = () => {
 
   const addTask = async (newTaskName: string) => {
     try {
-      const response = await fetch("http://localhost:3000/tasks", {
+      const response = await fetch(`${import.meta.env.API_HOST}/tasks`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const Main = () => {
 
   const deleteTask = async (id: string) => {
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+      const response = await fetch(`${import.meta.env.API_HOST}/tasks/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -65,7 +65,7 @@ const Main = () => {
       const taskToUpdate = taskList.find((task) => task._id === id);
       if (!taskToUpdate) return;
 
-      const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+      const response = await fetch(`${import.meta.env.API_HOST}/tasks/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const Main = () => {
       const taskToUpdate = taskList.find((task) => task._id === id);
       if (!taskToUpdate) return;
 
-      const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+      const response = await fetch(`${import.meta.env.API_HOST}/tasks/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
